@@ -211,7 +211,6 @@ Ext.extend(XDMoD.Module.AppKernels.AppKernelExplorer, XDMoD.PortalModule, {
             baseParams.selectedMetrics = selectedMetrics.join(',');
             baseParams.expandedAppKernels = expandedAppKernels.join(',');
             baseParams.selectedPUCounts = selectedPUCounts.join(',');
-            baseParams.active_role = CCR.xdmod.ui.activeRole;
             baseParams.title = this.chartTitleField.getValue();
             baseParams.legend_type = this.legendTypeComboBox.getValue();
             baseParams.font_size = this.fontSizeSlider.getValue();
