@@ -403,11 +403,10 @@ class AppKernelDb
                 //get all associated organization
                 $organizations=array();
                 if(in_array("cd",$roles))
-                    $organizations=array_merge($organizations,$user->getOrganizationCollection("cd"));
+                    $organizations = array($user->getOrganizationID());
                 if(in_array("cs",$roles))
-                    $organizations=array_merge($organizations,$user->getOrganizationCollection("cs"));
+                    $organizations= array($user->getOrganizationID());
                
-                $organizations[]=$user->getPrimaryOrganization();
                 $organizations[]=$user->getActiveOrganization();
                 
                 #get resource_id for all associated resources
